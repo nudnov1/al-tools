@@ -3,7 +3,7 @@ const CONFIG_SERVICES = [
         category: "Daily links",
         items: [
             { title: "AbuseipDB", description: "IP reputation", icon: "https://www.abuseipdb.com/img/abuseipdb.png", url: "https://www.abuseipdb.com/" },
-            { title: "DEMO12", description: "flask-conical", icon: "flask-conical", url: "https://demo12.nudnov.net/" }
+            { title: "DEMO12", description: "flask-conical", icon: "flask-conical", url: "https://demo12.nudnov.net/" },
             { title: "vpn-portal", description: "flask-conical", icon: "squares-intersect", url: "https://nudnov1.github.io/vpn-portal/" }
         ]
     },
@@ -144,4 +144,5 @@ const CONFIG_SERVICES = [
         ]
     }
 ];
+
 
