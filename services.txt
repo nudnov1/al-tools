@@ -1,0 +1,467 @@
+- Daily links :
+    - AbuseipDB :
+        icon: https://www.abuseipdb.com/img/abuseipdb.png
+        href: https://www.abuseipdb.com/
+        description:
+
+
+    - DEMO12 :
+        icon:
+        href: https://demo12.nudnov.net/
+
+
+
+- LiveDNS services :
+    - livedns - פתרונות ענן לעסקים:
+        icon: https://www.livedns.co.il/images/responsive/logo.png
+        href: https://www.livedns.co.il/
+        description: Homepage
+    - livedns orders:
+        icon: https://www.livedns.co.il/images/responsive/logo.png
+        href: https://www.livedns.co.il/_Admin/Login.aspx
+        description: Basic Authentication !!!
+    - domains - הדומיין שלך מחכה ...:
+        icon: https://www.livedns.co.il/images/responsive/logo.png
+        href: https://domains.livedns.co.il/
+        description: domains
+    - domains mgnt:
+        icon: https://www.livedns.co.il/images/responsive/logo.png
+        href: https://domains.livedns.co.il/Admin/Login.aspx
+        description: Basic Authentication !!!
+
+
+- Our services :
+    - DNS admin :
+        icon: https://www.livedns.co.il/images/responsive/logo.png
+        href: http://dns.livedns.co.il/
+        description: Basic Authentication 😎
+
+    - helpdesk :
+        icon: https://www.livedns.co.il/images/responsive/logo.png
+        href: https://helpdesk.livedns.co.il/Login.aspx
+        description:
+
+    - livedns.support :
+        icon: https://www.livedns.co.il/images/responsive/logo.png
+        href: https://livedns.support/en/boffice/login
+        description:
+
+    - Office contacs list :
+        icon: https://www.livedns.co.il/images/responsive/logo.png
+        href: https://www.livedns.co.il/office-contacts.html
+        description:
+
+
+- Office 365 & Microstoft services :
+    - Outlook office 365 :
+        icon: https://uhf.microsoft.com/images/microsoft/RE1Mu3b.png
+        href: https://outlook.office.com/
+    - Microsoft CSP - user management:
+        icon: https://uhf.microsoft.com/images/microsoft/RE1Mu3b.png
+        href: https://partner.microsoft.com/dashboard/v2/account-settings/usermanagement#users
+#        description: Basic Authentication 😎
+    - Exchange admin center - Mailboxes :
+        icon: https://uhf.microsoft.com/images/microsoft/RE1Mu3b.png
+        href: https://admin.exchange.microsoft.com/#/mailboxes
+        description:
+
+    - Microsoft 365 admin center - Active users :
+        icon: https://uhf.microsoft.com/images/microsoft/RE1Mu3b.png
+        href: https://admin.cloud.microsoft/?#/users
+        description:        
+    - My Azure services :
+        icon: https://uhf.microsoft.com/images/microsoft/RE1Mu3b.png
+        href: https://portal.azure.com/#home
+        description:
+    - Volume licensing - SPLA  :
+        icon: https://uhf.microsoft.com/images/microsoft/RE1Mu3b.png
+        href: https://admin.cloud.microsoft/?#/subscriptions/vlnew/downloadsandkeys
+        description:
+
+
+- Hypervisor:
+    - Proxmox:
+        icon: proxmox.svg
+        href: https://pve.livedns.cloud:8006/
+#        ping: https://pve.livedns.cloud:8006/
+        description:
+    - PBS :
+        icon: proxmox.svg
+        href: https://10.100.0.160:8007/
+#        ping: https://10.100.0.160:8007/
+        description:
+    - VMware VC200 :
+        icon: https://www.vmware.com/media/blt8c9a8aaca0ffd4ac/blt5a3e185aed7848a3/65fac63dd3267616e27e7051/vmware-logo-grey.svg
+        href: https://vc200.livecloud.local/
+#        ping: https://vc200.livecloud.local/ 
+        description:
+    - VMware VMware Appliance Management :
+        icon: https://www.vmware.com/media/blt8c9a8aaca0ffd4ac/blt5a3e185aed7848a3/65fac63dd3267616e27e7051/vmware-logo-grey.svg
+        href: https://vc200.livecloud.local:5480/#/login
+#        ping:  https://vc200.livecloud.local:5480/#/login
+        description: VMware vCenter Server Management 
+    - VMware Office :
+        icon: https://www.vmware.com/media/blt8c9a8aaca0ffd4ac/blt5a3e185aed7848a3/65fac63dd3267616e27e7051/vmware-logo-grey.svg
+        href: https://10.0.0.210
+        ping:  https://10.0.0.210
+        description:
+    - VMware Office Monitor:
+        icon: https://www.vmware.com/media/blt8c9a8aaca0ffd4ac/blt5a3e185aed7848a3/65fac63dd3267616e27e7051/vmware-logo-grey.svg
+        href: https://10.0.0.217
+        ping:  https://10.0.0.217
+        description:
+    - VMware Monitor:
+        icon: https://www.vmware.com/media/blt8c9a8aaca0ffd4ac/blt5a3e185aed7848a3/65fac63dd3267616e27e7051/vmware-logo-grey.svg
+        href: https://10.113.0.200
+#        ping:  https://10.113.0.200
+        description:
+- Mial services:
+    - SMTPIN:
+        icon: proxmox.svg
+        href: https://smtpin.lvdns.com:8006/
+        ping:  https://smtpin.lvdns.com:8006/
+        description: Shared SMTP service
+    - PMG:
+        icon: proxmox.svg
+        href: https://pmg.lvdns.com:8006/
+        ping: https://pmg.lvdns.com:8006/
+        description: Private SMTP service. System only.
+    - mailserver.livedns.co.il :
+        icon: https://www.mailenable.com/logos/images/mailenable_logo_small_grey.png
+        href: https://mailserver.livedns.co.il/Userlogin.aspx
+        description:
+    - web-mail.co.il :
+        icon: https://www.mailenable.com/logos/images/mailenable_logo_small_grey.png
+        href: https://web-mail.co.il/
+        ping: 
+        description: 
+
+- FireWalls :
+    - FG-200G  :
+        icon: fortinet.svg
+        href: https://62.219.78.1/
+        ping: https://62.219.78.1/
+        description: 62.219.78.1
+    - FG-200G-PVE :
+        icon: fortinet.svg
+        href: https://185.68.120.1/
+        ping: https://185.68.120.1/
+        description: 185.68.120.1
+    - FG-80F:
+        icon: fortinet.svg
+        href: https://10.0.0.254
+        ping: https://10.0.0.254
+        description: Office 10.0.0.254
+    - FG-60D:
+        icon: fortinet.svg
+        href: https://82.81.95.106/login
+        ping: https://82.81.95.106
+        description: VPN client 82.81.95.106
+    - FG-200E-Monitoring:
+        icon: fortinet.svg
+        href: https://84.110.122.74:12243/
+#        ping: 
+        description: 200E
+    - pfSense:
+        icon: https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/PfSense_logo.png/960px-PfSense_logo.png
+        href: https://84.110.122.74:411/index.php
+        description: 84.110.122.74
+
+- Security tools :
+    - FortiDDoS-200F:
+        icon: https://icons.fortinet.com/icons/November-2023/DDoS.svg
+        href: https://62.219.78.4
+        description:
+    - FortiWEB:
+        icon: https://icons.fortinet.com/icons/Services/Cloud%20Service%20Products/FortiSASE-SIA%20Cloud.svg
+        href: https://62.219.78.2
+        description:
+    - FortiAnalyzer:
+        icon: https://icons.fortinet.com/icons/New%20-%20updated%20icons%202025/March/FortiCentral.svg
+        href: https://62.219.78.9/
+        description:
+    - FLOWSEC:
+        icon: https://customer.secunity.io/assets/logo-CVMckJWk.svg
+        href: https://customer.secunity.io/login
+        description:
+    - ESET protect on-prem :
+        icon: https://upload.wikimedia.org/wikipedia/he/f/f0/ESET_logo.svg
+        href: https://liveav.lvdns.com/era/webconsole/
+        description:
+    - eset.com ema :
+        icon: https://upload.wikimedia.org/wikipedia/he/f/f0/ESET_logo.svg
+        href: https://msp.eset.com/ema/dashboard
+        description:
+
+
+- Networking & Storage :
+    - HP2920:
+        icon: hp
+        href: http://10.1.0.40
+        description: HP 2902 primary switch
+        siteMonitor: 
+    - HP5700:
+        icon: hp
+        href: https://10.100.0.250
+        description: PVE switch
+        siteMonitor: 
+    -  FortiSwitch-A:
+        icon: https://icons.fortinet.com/icons/Secure%20Networking/Products/FortiSwitch.svg
+        href: https://10.1.0.4
+        description: HP 2902 primary switch
+        siteMonitor: 
+    -  FortiSwitch-B:
+        icon: https://icons.fortinet.com/icons/Secure%20Networking/Products/FortiSwitch.svg
+        href: https://10.1.0.5
+        description: HP 2902 primary switch
+        siteMonitor: 
+    - Office HP-2530-48G:
+        icon: hp
+        href: http://10.0.0.250
+        description: HP 2530-48G Switch (J9775A)
+        siteMonitor: http://10.0.0.250
+    - NIMBLE PVE Storage:
+        icon: hp
+        href: https://10.100.0.100/#/login
+        description:
+    - MSA - PVE backup Storage:
+        icon: hp
+        href: https://10.100.0.150/ 
+        description:
+    - FlashSystem 7300 :
+        icon: https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/IBM_logo.svg/250px-IBM_logo.svg.png
+        href: https://10.10.169.100/
+        description:
+    - cTera C200 - Office Backups :
+        icon: https://cdn-ilcenln.nitrocdn.com/CaKiVSwCXUTAGysektBrnICUTbBPFUwY/assets/images/source/rev-5b394aa/www.ctera.com/wp-content/uploads/2024/07/ctera-logo-white.svg
+        href: https://10.0.0.180 
+        description:
+
+- Sopport :
+    - Fortinet Support:
+        icon: https://support.fortinet.com/welcome/assets/img/supportNew/img/logo.svg
+        href: https://support.fortinet.com/
+        description:
+    - UCS:
+        icon: cisco.svg
+        href: https://eu-central-1.intersight.com/
+        description:
+    - IBM Storage Insights:
+        icon: https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/IBM_logo.svg/250px-IBM_logo.svg.png
+        href: https://login.ibm.com/authsvc/mtfim/sps/authsvc?PolicyId=urn:ibm:security:authentication:asf:basicldapuser&Target=https%3A%2F%2Flogin.ibm.com%2Foidc%2Fendpoint%2Fdefault%2Fauthorize%3FqsId%3Dc733c78f-7cad-4b48-ab5c-38f72890290d%26client_id%3DMyIBMLondonProdCI
+        description:
+    - IBM Support:
+        icon: https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/IBM_logo.svg/250px-IBM_logo.svg.png
+        href: https://www.ibm.com/mysupport/s/?language=en_US
+        description:
+    - IBM Upload log file:
+        icon: https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/IBM_logo.svg/250px-IBM_logo.svg.png
+        href: https://www.secure.ecurep.ibm.com/app/upload_sf
+        description:
+    - DELL My Products and Services:
+        icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/dell.png
+        href: https://www.dell.com/support/mps/en-us/servicerequests
+    - DELL - VMware OEM Products with ProSupport:
+        icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/vmware.png
+        href: https://www.dell.com/support/product-details/en-us/servicetag/0-bDJyRCtGTE9idDJDRHVhV1dMamlVQT090/overview
+
+#VEEAM
+
+- Monitors :
+    - Uptime Kuma Shaham BE8:
+        icon: uptime-kuma.svg
+        href: http://uptime-kuma.lvdns.com:3001/
+        siteMonitor: http://uptime-kuma.lvdns.com:3001
+    - Uptime Kuma Shaham 84:
+        icon: uptime-kuma.svg
+        href: http://kuma84.lvdns.com:3001/dashboard
+        siteMonitor: http://kuma84.lvdns.com:3001
+    - Uptime Kuma Shaham Oracle:
+        icon: uptime-kuma.svg
+        href: http://uptime-kuma-oracle.lvdns.com:3001/dashboard
+        siteMonitor: http://uptime-kuma-oracle.lvdns.com:3001
+        description:
+
+    - Uptime Kuma - Amsterdam (vultr) :
+        icon: uptime-kuma.svg
+        href: http://78.141.218.37:3001/
+        siteMonitor: http://78.141.218.37:3001/
+        description:
+
+    - Z7 - primary zabbix 7.4 :
+        icon: https://upload.wikimedia.org/wikipedia/commons/b/bf/Zabbix_logo.png
+        href: https://z7.nudnov.net/
+        siteMonitor: https://z7.nudnov.net
+        description:
+    - Office zabbix:
+        icon: https://upload.wikimedia.org/wikipedia/commons/b/bf/Zabbix_logo.png
+        href: http://zabbix6.livedns.local/zabbix/
+        siteMonitor: http://zabbix6.livedns.local
+        description:
+    - S5 - Office zabbix 7.4 :
+        icon: https://upload.wikimedia.org/wikipedia/commons/b/bf/Zabbix_logo.png
+        href: https://s5-office.nudnov.net/
+        description:
+
+    - S4 - VPS monitor :
+        icon: https://upload.wikimedia.org/wikipedia/commons/b/bf/Zabbix_logo.png
+        href: https://s4.lvdns.com
+        siteMonitor: https://s4.lvdns.com
+        description:
+    - Office sqlbackups monitor :
+        icon: https://upload.wikimedia.org/wikipedia/he/3/39/Microsoft_SQL_server_logo.png
+        href: http://sqlbackups/
+
+- Logs and more :
+    - WAZUH :
+        icon: wazuh
+        href: https://wazuh0306.lvdns.com/
+        siteMonitor: https://wazuh0306.lvdns.com/
+        description:
+    - librenms:
+        icon: librenms.svg
+        href: http://librenms.lvdns.com/
+        siteMonitor: http://librenms.lvdns.com
+        description: SNMP and SYSLOG
+    - librenms:
+        icon: librenms.svg
+        href: http://librenms.nudnov.net/
+        siteMonitor: http://librenms.nudnov.net
+        description: SNMP and SYSLOG. New instalation
+
+- My tools:
+    - Paasword mamanger PASS11:
+        icon: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcBq6-ucgerr3JaksnJ_Pr9qZOufxKO8zIt9ix_Lg6QND1bO-hbCMXwx9GPKm6W58qAw0&usqp=CAU
+        href: http://pass11.lvdns.com/syspass/
+        siteMonitor: http://pass11.lvdns.com/syspass/
+        description:
+
+    - IPAM:
+        icon: https://phpipam.net/css/images/phpipam_logo_small@2x.png
+        href: http://ipmanager.livedns.local/
+        siteMonitor: http://ipmanager.livedns.local/
+        description:
+#    - REDMINE:
+#        icon: https://upload.wikimedia.org/wikipedia/commons/3/3f/Redmine_logo.svg
+#        href: http://redmine.lvdns.com/
+#        siteMonitor: http://redmine.lvdns.com/
+#        description:
+    - REDMINE01:
+        icon: https://upload.wikimedia.org/wikipedia/commons/3/3f/Redmine_logo.svg
+        href: https://redmine01.lvdns.com/
+        siteMonitor: https://redmine01.lvdns.com/
+        description:
+    - NETBOX:
+        icon: netbox
+        href: https://netbox.lvdns.com/
+        siteMonitor: https://netbox.lvdns.com/
+        description:
+#    - Kasm:
+#        icon: kasm.svg
+#        href: https://kasm.livedns.local/#/login
+#        siteMonitor: https://kasm.livedns.local/#/login
+#        description:
+#    - nextcloud :
+#        icon: nextcloud
+#        href: https://nextcloud.nudnov.net/
+#        siteMonitor: https://nextcloud.nudnov.net/
+#        description:
+    - 5:
+        icon:
+        href:
+        siteMonitor:
+        description:
+
+
+
+- My Office Environments:
+    - Akuvox :
+        icon: 
+        href: http://10.0.0.54/fcgi/do?id=130&id=18&RefRand=32668868
+        description: ניהול קודן
+        siteMonitor: http://10.0.0.54/
+    - NetAlert :
+        icon: https://jokob-sk.github.io/NetAlertX/img/netalertx_docs.png
+        href: http://lvadm:20211/
+        description:
+        siteMonitor: 
+    - Akuvox Live Stream :
+        icon :
+        href : http://10.0.0.54/fcgi/do?id=130&id=4&RefRand=50981604
+        description :
+        siteMonitor : 
+    - Office homepage Local : 
+        icon : homepage
+        href : http://lvadm:3000/
+        description :
+        siteMonitor :
+
+    - adm.nudnov.net :
+        icon : homepage
+        href : https://adm.nudnov.net/
+        description :
+        siteMonitor :
+
+- My MSP services :
+    - LiveBACKUP MultiTenant :
+        icon: https://www.livedns.co.il/images/responsive/logo.png
+        href: https://intelli1.zoolz.co.uk/MultiTenant/Dashboard
+        description: https://intelli1.zoolz.co.uk/MultiTenant/Dashboard
+        siteMonitor: 
+    - LiveBACKUP MSP :
+        icon: https://www.livedns.co.il/images/responsive/logo.png
+        href: https://msp.livebackup.co.il/Partners/Dashboard
+        description:
+        siteMonitor: 
+    - LiveBACKUP Client portal :
+        icon: https://www.livedns.co.il/images/responsive/logo.png
+        href: https://my.livebackup.co.il/
+        description:
+        siteMonitor: 
+    - Dropsuite Partner Portal :
+        icon: https://dropsuite.com/wp-content/uploads/dropsuite-n1-logo-color.svg
+        href: https://dropsuite-de.com/sign_in
+        description:
+        siteMonitor:        
+    - voicenter :
+        icon: https://cpanel.voicenter.co.il/images/agentsvoicentercoil/logo.png
+        href: https://cpanel.voicenter.co.il/Login/Index
+        description:
+        siteMonitor: 
+    - itfactory portal :
+        icon: https://mp.itfactoryportal.com/branding/latest/logo.png
+        href: https://mp.itfactoryportal.com/v/#/login?redirect=%23%2FDashboard
+        description:
+        siteMonitor: 
+    - Microsoft CSP :
+        icon: https://uhf.microsoft.com/images/microsoft/RE1Mu3b.png
+        href: https://partner.microsoft.com/dashboard/v2/home
+        description:
+        siteMonitor: 
+    - HostedScan :
+        icon: https://hostedscan.com/images/v2/mark/hostedscan-dark.svg
+        href: https://hostedscan.com/dashboard
+        description:
+        siteMonitor: 
+    - Acronis Cyber Protection :
+        icon: https://d2kq0urxkarztv.cloudfront.net/5e60f30b6ad81200a9f638f5/2339077/upload-ea55cf9e-7dee-4f53-94b8-e6363b9ce32b.png?w=566&e=webp&nll=true
+        href: https://il01-cloud.acronis.com/login
+        siteMonitor: 
+    - Sentinel One :
+        icon: https://www.sentinelone.com/wp-content/themes/sentinelone/assets/svg/header-logo-dark.svg
+        href: https://euce1-exclusive.sentinelone.net/dashboard
+        description:
+        siteMonitor: https://euce1-exclusive.sentinelone.net/
+- Other:
+    - GitLab:
+        icon: gitlab.svg
+        href: https://gitlab.com
+        description: source code
+    - GitHub:
+        icon: github.svg
+        href: https://github.com
+        description: source code
+    - Meet Homepage:
+        icon: 
+        href: https://technotim.live/posts/homepage-dashboard/
+        description: Meet Homepage - Your HomeLab Services Dashboard

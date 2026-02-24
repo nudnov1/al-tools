@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LiveDNS Dashboard</title>
+    <meta name="description" content="A powerful and sleek personal dashboard for managing services and links.">
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-content container">
+            <div class="logo">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2L3.5 7V17L12 22L20.5 17V7L12 2Z" stroke="white" stroke-width="2"
+                        stroke-linejoin="round" />
+                    <path d="M12 22V12" stroke="white" stroke-width="2" stroke-linecap="round" />
+                    <path d="M20.5 7L12 12L3.5 7" stroke="white" stroke-width="2" stroke-linecap="round" />
+                </svg>
+                <span class="logo-text">LiveDNS</span>
+            </div>
+            <div class="search-wrapper">
+                <div class="search-icon">
+                    <i data-lucide="search" size="18"></i>
+                </div>
+                <input type="text" id="search-input" placeholder="Search services..." autocomplete="off">
+                <div class="search-actions">
+                    <span class="search-shortcut">/</span>
+                    <button id="google-search-btn" title="Search on Google">
+                        <span>G</span>
+                    </button>
+                </div>
+            </div>
+            <div class="time-display" id="time-display">
+                <span class="date" id="current-date">--/--/----</span>
+                <span class="time" id="current-time">00:00:00</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="dashboard-block">
+            <h1 class="block-title">Services</h1>
+            <div id="services-grid" class="dashboard-grid">
+                <div class="loading">Loading services...</div>
+            </div>
+        </section>
+
+        <section class="dashboard-block">
+            <h1 class="block-title">Bookmarks</h1>
+            <div id="bookmarks-grid" class="dashboard-grid">
+                <!-- Bookmarks will be injected here -->
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer container">
+        <p>&copy; 2026 LiveDNS Dashboard. Built for efficiency.</p>
+    </footer>
+
+    <script src="settings.js"></script>
+    <script src="services.js"></script>
+    <script src="bookmarks.js"></script>
+    <script src="widgets.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

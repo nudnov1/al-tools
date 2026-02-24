@@ -1,0 +1,302 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/configs/bookmarks
+
+- Server MGMT :
+    - iLO PVE004 :
+        - abbr:
+          href: https://10.250.100.40/
+          icon: hp
+
+    - iLO PVE003 :
+        - abbr:
+          href: https://10.250.100.30/
+          icon: hp
+
+    - iLO PVE002 :
+        - abbr:
+          href: https://10.250.100.20/
+          icon: hp
+
+    - iLO PVE001 :
+        - abbr:
+          href: https://10.250.100.10/
+          icon: hp
+
+    - iDRAC hyper-v vbr :
+        - abbr:
+          href: https://10.1.0.164/
+          icon: dell
+# Dell          
+    - iDRAC office vmware :
+        - abbr:
+          href: https://10.0.0.209/
+          icon: dell
+# HPe          
+    - iLO STR60-Jaffa :
+        - abbr:
+          href: https://10.250.1.59/
+          icon: hp
+    - iLO hyperv-Jaffa :
+        - abbr:
+          href: https://10.250.1.159/
+          icon: hp
+       
+# Clients:                   
+    - iLO RavehRavid :
+        - abbr:
+          href: https://192.168.111.109/
+          icon: hp
+# 
+    - UCS CIMC monitoring :
+        - abbr:
+          href: https://10.10.169.113/
+          icon: cisco
+    - UCS CIMC Backup :
+        - abbr:
+          href: https://10.10.169.120/
+          icon: cisco   
+    - UCS vKVM-ESXI05  :
+        - abbr:
+          href: https://10.10.169.33/kvm/
+          icon: cisco
+    - UCS vKVM-ESXI04  :
+        - abbr:
+          href: https://10.10.169.38/kvm/
+          icon: cisco
+    - UCS vKVM-ESXI03  :
+        - abbr:
+          href: https://10.10.169.34/kvm/
+          icon: cisco          
+    - UCS vKVM-ESXI02  :
+        - abbr:
+          href: https://10.10.169.37/kvm/
+          icon: cisco
+    - UCS vKVM-ESXI01  :
+        - abbr:
+          href: https://10.10.169.35/kvm/
+          icon: cisco
+    - UCS vKVM-HyperV-56  :
+        - abbr:
+          href: https://10.10.169.30/kvm/
+          icon: cisco
+    - UCS vKVM-HyperV-55  :
+        - abbr:
+          href: https://10.10.169.36/kvm/
+          icon: cisco
+    - UCS vKVM-HyperV-54  :
+        - abbr:
+          href: https://10.10.169.32/kvm/
+          icon: cisco
+    - UCS vKVM-HyperV-53  :
+        - abbr:
+          href: https://10.10.169.31/kvm/
+          icon: cisco
+    - UCS vKVM-HyperV-52  :
+        - abbr:
+          href: https://10.10.169.39/kvm/
+          icon: cisco
+    - UCS vKVM-HyperV-51 :
+        - abbr:
+          href: https://10.10.169.41/kvm/
+          icon: cisco
+
+- Virtualization nodes :
+    - ESX201 :
+        - abbr:
+          href: https://10.1.0.201/
+          icon: vmware
+    - ESX202 :
+        - abbr:
+          href: https://10.1.0.202
+          icon: vmware
+    - ESX203 :
+        - abbr:
+          href: https://10.1.0.203
+          icon: vmware
+    - ESX204 :
+        - abbr:
+          href: https://10.1.0.204
+          icon: vmware
+    - ESX205 :
+        - abbr:
+          href: https://10.1.0.205
+          icon: vmware
+    - PVE001 :
+        - abbr:
+          href: https://10.100.0.10:8006/
+          icon: proxmox
+    - PVE002 :
+        - abbr:
+          href: https://10.100.0.20:8006/
+          icon: proxmox
+    - PVE003 :
+        - abbr:
+          href: https://10.100.0.30:8006/
+          icon: proxmox
+    - PVE004 :
+        - abbr:
+          href: https://10.100.0.40:8006/
+          icon: proxmox
+
+- Support team links :
+     - Helpdesk mailbox :
+        - abbr:
+          href: https://62.219.78.71:2087/
+          description: WHM 
+     - Helpdesk cPane :
+        - abbr:
+          href: https://62.219.78.71:2083/cpsess4182571459/frontend/jupiter/email_accounts/index.html#/list
+          description: CPANEL
+     - Contact list :
+        - abbr:
+          href: https://www.livedns.co.il/office-contacts.html
+          icon: html
+     - RustDesk  :
+        - abbr:
+          href: https://rustdesk.com/
+          icon: rustdesk
+
+
+#
+#
+#
+- Abusers Lists :
+    - Shared Abuse IP List :
+        - abbr:
+          href: https://github.com/CloudLVadmin/ALERT-CERT-IL/blob/main/ioc-ips
+          icon: github
+ 
+    - Shared Abuse Domains List :
+        - abbr:
+          href: https://github.com/CloudLVadmin/ALERT-CERT-IL/blob/main/ioc-domains
+#          description: Shared AB Domains List
+          icon: github
+
+    - Shared Abuse Masks List :
+        - abbr:
+          href: https://github.com/CloudLVadmin/ALERT-CERT-IL/blob/main/ip_masks_abusers.txt
+#          description: Shared Abuse Masks List
+          icon: github
+
+    - Shared Abuse for DNS services :
+        - abbr:
+          href: https://github.com/CloudLVadmin/ALERT-CERT-IL/blob/main/named_abusers.txt
+#          description: Shared Abuse for DNS services
+          icon: github
+
+- Windows shared hosting :
+    - Plesk231 :
+        - abbr:
+          href: https://62.219.78.231:8443/
+          description:
+          icon: plesk
+    - Plesk230 :
+        - abbr:
+          href: https://62.219.78.230:8443/
+          description:
+          icon: plesk
+    - SolidCP :
+        - abbr:
+          href: https://control.livedns.co.il/
+          icon: https://solidcp.com/wp-content/uploads/2016/03/Logo-horizontal.png.webp
+
+- Linux shared hosting :
+    - cPanel8 WHM  :
+        - abbr:
+          href: https://cpanel8.livedns.co.il:2087/
+          icon: cpanel
+    - cPanel11 WHM  :
+        - abbr:
+          href: https://cpanel11.livedns.co.il:2087/
+          icon: cpanel
+    - cPanel5 WHM  :
+        - abbr:
+          href: https://cpanel15.livedns.co.il:2087/
+          icon: cpanel
+    - cPanel16 WHM  :
+        - abbr:
+          href: https://cpanel16.livedns.co.il:2087/
+          icon: cpanel
+    - cPanel17 WHM  :
+        - abbr:
+          href: https://cpanel17.livedns.co.il:2087/
+          icon: cpanel
+    - cPanel18 WHM  :
+        - abbr:
+          href: https://cpanel18.livedns.co.il:2087/
+          icon: cpanel
+    - cPanel19 WHM  :
+        - abbr:
+          href: https://cpanel29.livedns.co.il:2087/
+          icon: cpanel
+    - cPanel20 WHM  :
+        - abbr:
+          href: https://cpanel20.livedns.co.il:2087/
+          icon: cpanel
+    - cPanel21 WHM  :
+        - abbr:
+          href: https://cpanel21.livedns.co.il:2087/
+          icon: cpanel
+    - cPanel22 WHM  :
+        - abbr:
+          href: https://cpanel22.livedns.co.il:2087/
+          icon: cpanel
+    - cPanel23 WHM  :
+        - abbr:
+          href: https://cpanel23.livedns.co.il:2087/
+          icon: cpanel
+    - cPanel24 WHM  :
+        - abbr:
+          href: https://cpanel24.livedns.co.il:2087/
+          icon: cpanel
+    - cPanel25 WHM  :
+        - abbr:
+          href: https://cpanel25.livedns.co.il:2087/
+          icon: cpanel
+    - cPanel26 WHM :
+        - abbr:
+          href: https://cpanel26.livedns.co.il:2087/
+          icon: cpanel
+    - LivePress Plesk :
+        - abbr:
+          href: https://cp101.livepress.co.il:8443
+          icon: plesk
+
+- Support team links :
+     - Helpdesk mailbox :
+        - abbr:
+          href: https://62.219.78.71:2087/
+          description: WHM 
+     - Helpdesk cPane :
+        - abbr:
+          href: https://62.219.78.71:2083/cpsess4182571459/frontend/jupiter/email_accounts/index.html#/list
+          description: CPANEL
+- Support team links :
+     - Helpdesk mailbox :
+        - abbr:
+          href: https://62.219.78.71:2087/
+          description: WHM 
+     - Helpdesk cPane :
+        - abbr:
+          href: https://62.219.78.71:2083/cpsess4182571459/frontend/jupiter/email_accounts/index.html#/list
+          description: CPANEL
+- Support team links :
+     - Helpdesk mailbox :
+        - abbr:
+          href: https://62.219.78.71:2087/
+          description: WHM 
+     - Helpdesk cPane :
+        - abbr:
+          href: https://62.219.78.71:2083/cpsess4182571459/frontend/jupiter/email_accounts/index.html#/list
+          description: CPANEL
+- Support team links :
+     - Helpdesk mailbox :
+        - abbr:
+          href: https://62.219.78.71:2087/
+          description: WHM 
+     - Helpdesk cPane :
+        - abbr:
+          href: https://62.219.78.71:2083/cpsess4182571459/frontend/jupiter/email_accounts/index.html#/list
+          description: CPANEL
+
