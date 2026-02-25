@@ -6,13 +6,23 @@
 export default async (request, context) => {
     const url = new URL(request.url);
     const cookieName = "dashboard_auth";
-    // Секретный пароль (вы можете изменить его здесь или использовать переменную окружения)
+    // Получаем пароль из переменных окружения Netlify
     const SECRET_PASSWORD = Netlify.env.get("DASHBOARD_PASSWORD");
 
-    // Разрешаем доступ к стилям и скриптам, чтобы страница логина выглядела красиво
+    // Если переменная не задана, можно оставить доступ открытым или вывести ошибку
+    if (!SECRET_PASSWORD) {
+        return new Response("Security Error: DASHBOARD_PASSWORD not set in Netlify Environment Variables.", { status: 500 });
+    }
+
+    // Разрешаем доступ ТОЛЬКО к необходимым ресурсам для страницы логина.
+    // Мы убираем общую проверку .js, чтобы защитить services.js и bookmarks.js.
+    const whitelistedPaths = [
+        "/style.css",
+        "/favicon.ico"
+    ];
+
     if (
-        url.pathname.endsWith(".css") ||
-        url.pathname.endsWith(".js") ||
+        whitelistedPaths.includes(url.pathname) ||
         url.pathname.endsWith(".png") ||
         url.pathname.endsWith(".svg") ||
         url.pathname.startsWith("/.netlify")
@@ -145,4 +155,3 @@ export default async (request, context) => {
 export const config = {
     path: "/*"
 };
-
