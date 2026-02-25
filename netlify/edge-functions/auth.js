@@ -1,56 +1,81 @@
 /**
- * Netlify Edge Function: Auth by Role
- * This function intercepts all requests and checks for the 'admin' role.
- * It uses Netlify Identity by default but can be extended.
+ * Simple Password Guard via Netlify Edge Functions
+ * This is a standalone password protection for your dashboard.
  */
 
 export default async (request, context) => {
-  const { user } = context;
-  const url = new URL(request.url);
+    const url = new URL(request.url);
+    const cookieName = "dashboard_auth";
+    // Секретный пароль (вы можете изменить его здесь или использовать переменную окружения)
+    const SECRET_PASSWORD = "rouser9090";
 
-  // Allow access to netlify identity paths (login, etc) and static assets if not excluded in config
-  if (url.pathname.startsWith("/.netlify") || 
-      url.pathname.endsWith(".css") || 
-      url.pathname.endsWith(".js") || 
-      url.pathname.endsWith(".png") || 
-      url.pathname.endsWith(".svg") || 
-      url.pathname === "/favicon.ico") {
-    return context.next();
-  }
+    // Разрешаем доступ к стилям и скриптам, чтобы страница логина выглядела красиво
+    if (
+        url.pathname.endsWith(".css") ||
+        url.pathname.endsWith(".js") ||
+        url.pathname.endsWith(".png") ||
+        url.pathname.endsWith(".svg") ||
+        url.pathname.startsWith("/.netlify")
+    ) {
+        return context.next();
+    }
 
-  // Check for Netlify Identity role
-  const roles = user?.app_metadata?.roles || [];
-  const isAdmin = roles.includes("admin");
+    // Обработка выхода (logout)
+    if (url.pathname === "/logout") {
+        context.cookies.delete(cookieName);
+        return new Response("Logged out", {
+            status: 302,
+            headers: { Location: "/" },
+        });
+    }
 
-  // Optional: Check for a simple session cookie for demo/dev purposes
-  // You can set this cookie manually in your browser console: document.cookie = "nf_role=admin; path=/"
-  const cookieRole = context.cookies.get("nf_role");
-  
-  if (isAdmin || cookieRole === "admin") {
-    // Proceed to the dashboard
-    return context.next();
-  }
+    // Обработка попытки входа
+    if (request.method === "POST" && url.pathname === "/login") {
+        const formData = await request.formData();
+        const password = formData.get("password");
 
-  // Otherwise, return a beautiful access denied page
-  return new Response(
-    `
+        if (password === SECRET_PASSWORD) {
+            context.cookies.set({
+                name: cookieName,
+                value: "true",
+                path: "/",
+                httpOnly: true,
+                secure: true,
+                sameSite: "Strict",
+                maxAge: 60 * 60 * 24 * 7, // 1 неделя
+            });
+            return new Response(null, {
+                status: 302,
+                headers: { Location: "/" },
+            });
+        } else {
+            return new Response("Invalid password", { status: 401 });
+        }
+    }
+
+    // Проверка сессии (куки)
+    const isAuthorized = context.cookies.get(cookieName) === "true";
+
+    if (isAuthorized) {
+        return context.next();
+    }
+
+    // Если не авторизован — показываем форму входа
+    return new Response(
+        `
     <!DOCTYPE html>
-    <html lang="en">
+    <html lang="ru">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Access Denied - LiveDNS Dashboard</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <title>Вход в Dahboard</title>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
         <style>
             :root {
                 --bg: #0f172a;
                 --card-bg: rgba(30, 41, 59, 0.7);
-                --danger: #f43f5e;
-                --text: #f8fafc;
-                --text-dim: #94a3b8;
                 --primary: #3b82f6;
+                --text: #f8fafc;
             }
             body { 
                 font-family: 'Inter', sans-serif; 
@@ -61,78 +86,62 @@ export default async (request, context) => {
                 justify-content: center; 
                 height: 100vh; 
                 margin: 0; 
-                overflow: hidden;
             }
-            .card { 
+            .login-card { 
                 background: var(--card-bg); 
                 backdrop-filter: blur(20px); 
-                padding: 3rem; 
+                padding: 2.5rem; 
                 border-radius: 1.5rem; 
                 border: 1px solid rgba(255,255,255,0.1); 
-                text-align: center; 
-                max-width: 450px; 
-                box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
-                animation: slideUp 0.6s cubic-bezier(0.16, 1, 0.3, 1);
-            }
-            @keyframes slideUp {
-                from { transform: translateY(20px); opacity: 0; }
-                to { transform: translateY(0); opacity: 1; }
-            }
-            .icon-wrapper {
-                width: 64px;
-                height: 64px;
-                background: rgba(244, 63, 94, 0.1);
-                border-radius: 50%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                margin: 0 auto 1.5rem;
-                color: var(--danger);
-            }
-            h1 { font-size: 1.875rem; font-weight: 600; margin: 0 0 1rem; color: var(--text); }
-            p { color: var(--text-dim); line-height: 1.6; margin-bottom: 2rem; font-size: 1.1rem; }
-            .btn { 
-                display: block; 
                 width: 100%;
-                padding: 1rem; 
+                max-width: 380px;
+                text-align: center;
+                box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+            }
+            h1 { font-size: 1.5rem; margin-bottom: 1.5rem; }
+            input { 
+                width: 100%; 
+                padding: 0.75rem 1rem; 
+                margin-bottom: 1rem; 
+                border-radius: 0.5rem; 
+                border: 1px solid rgba(255,255,255,0.1);
+                background: rgba(0,0,0,0.2);
+                color: white;
+                box-sizing: border-box;
+                font-size: 1rem;
+            }
+            button { 
+                width: 100%; 
+                padding: 0.75rem; 
                 background: var(--primary); 
                 color: white; 
-                text-decoration: none; 
-                border-radius: 0.75rem; 
+                border: none; 
+                border-radius: 0.5rem; 
                 font-weight: 600; 
-                transition: all 0.2s;
-                border: none;
                 cursor: pointer;
                 font-size: 1rem;
             }
-            .btn:hover { background: #2563eb; transform: translateY(-1px); box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); }
-            .info { margin-top: 2rem; font-size: 0.875rem; color: #475569; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 1.5rem; }
+            button:hover { background: #2563eb; }
         </style>
     </head>
     <body>
-        <div class="card">
-            <div class="icon-wrapper">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/>
-                </svg>
-            </div>
-            <h1>Protected Dashboard</h1>
-            <p>Access to these resources is restricted to users with the <strong>admin</strong> role.</p>
-            <a href="/.netlify/identity/login" class="btn">Login with Identity</a>
-            <div class="info">
-                LiveDNS Infrastructure Security Policy
-            </div>
+        <div class="login-card">
+            <h1>Private Access</h1>
+            <form action="/login" method="POST">
+                <input type="password" name="password" placeholder="Введите пароль..." autofocus required>
+                <button type="submit">Войти</button>
+            </form>
         </div>
     </body>
     </html>
     `,
-    {
-      status: 403,
-      headers: { "content-type": "text/html" },
-    }
-  );
+        {
+            status: 401,
+            headers: { "content-type": "text/html" },
+        }
+    );
 };
 
 export const config = {
-  path: "/*"
+    path: "/*"
 };
