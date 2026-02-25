@@ -204,10 +204,13 @@ async function fetchPublicIP() {
     const ipDisplay = document.getElementById('public-ip');
     if (!ipDisplay) return;
 
+    console.log("Fetching public IP...");
     try {
-        const response = await fetch('https://api.ipify.org?format=json');
+        // Использование api64 позволяет получить IP даже если у пользователя только IPv6
+        const response = await fetch('https://api64.ipify.org?format=json');
         if (!response.ok) throw new Error('Network response was not ok');
         const data = await response.json();
+        console.log("IP detected:", data.ip);
         ipDisplay.textContent = data.ip;
     } catch (error) {
         console.error('Failed to fetch IP:', error);
