@@ -7,7 +7,7 @@ export default async (request, context) => {
     const url = new URL(request.url);
     const cookieName = "dashboard_auth";
     // Секретный пароль (вы можете изменить его здесь или использовать переменную окружения)
-    const SECRET_PASSWORD = "rouser9090";
+    const SECRET_PASSWORD = Netlify.env.get("DASHBOARD_PASSWORD");
 
     // Разрешаем доступ к стилям и скриптам, чтобы страница логина выглядела красиво
     if (
@@ -145,3 +145,4 @@ export default async (request, context) => {
 export const config = {
     path: "/*"
 };
+
