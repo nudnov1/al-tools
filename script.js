@@ -40,6 +40,7 @@ function initializeApp() {
     }
 
     setupSearch();
+    fetchPublicIP();
 }
 
 function applySettings() {
@@ -197,6 +198,21 @@ function updateClock() {
     const seconds = String(now.getSeconds()).padStart(2, '0');
     const timeEl = document.getElementById('current-time');
     if (timeEl) timeEl.textContent = `${hours}:${minutes}:${seconds}`;
+}
+
+async function fetchPublicIP() {
+    const ipDisplay = document.getElementById('public-ip');
+    if (!ipDisplay) return;
+
+    try {
+        const response = await fetch('https://api.ipify.org?format=json');
+        if (!response.ok) throw new Error('Network response was not ok');
+        const data = await response.json();
+        ipDisplay.textContent = data.ip;
+    } catch (error) {
+        console.error('Failed to fetch IP:', error);
+        ipDisplay.textContent = 'IP Hidden';
+    }
 }
 
 document.addEventListener('DOMContentLoaded', initializeApp);

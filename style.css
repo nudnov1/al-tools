@@ -171,6 +171,33 @@ body {
     font-size: 1rem;
 }
 
+.ip-display {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 14px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    transition: var(--transition-fast);
+    cursor: default;
+    white-space: nowrap;
+}
+
+.ip-display:hover {
+    background: rgba(255, 255, 255, 0.06);
+    color: var(--text-primary);
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.ip-display i {
+    width: 14px;
+    height: 14px;
+    color: var(--accent-color);
+}
+
 /* Dashboard Grid */
 /* Dashboard Sections */
 .dashboard-block {
