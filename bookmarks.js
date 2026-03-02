@@ -50,12 +50,14 @@ const CONFIG_BOOKMARKS = [
         ]
     },
     {
-        category: "Abusers Lists",
+        category: "Abusers Lists & Demo sites",
         links: [
-            { name: "Shared Abuse IP List", url: "https://github.com/...", icon: "github" },
-            { name: "Shared Abuse Domains List", url: "https://github.com/...", icon: "github" },
-            { name: "Shared Abuse Masks List", url: "https://github.com/...", icon: "github" },
+            { name: "Shared Abuse IP List", url: "https://github.com/CloudLVadmin/ALERT-CERT-IL/blob/main/ioc-ips", icon: "github" },
+            { name: "Shared Abuse Domains List", url: "https://github.com/CloudLVadmin/ALERT-CERT-IL/blob/main/ioc-domains", icon: "github" },
+            { name: "Shared Abuse Masks List", url: "https://github.com/CloudLVadmin/ALERT-CERT-IL/blob/main/ip_masks_abusers.txt", icon: "github" },
             { name: "Abuse DNS services", url: "https://github.com/...", icon: "github" }
+            { name: "DEMO1", url: "https://demo0.lvdns.com/", icon: "github" }
+            { name: "DEMO0", url: "https://demo1.lvdns.com/", icon: "github" }
         ]
     },
     {
@@ -87,3 +89,4 @@ const CONFIG_BOOKMARKS = [
         ]
     }
 ];
+
