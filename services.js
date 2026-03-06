@@ -110,7 +110,9 @@ const CONFIG_SERVICES = [
             { title: "Kuma Amsterdam-vultr", description: "Uptime", icon: "activity", url: "78.141.218.37:3001/dashboard" },
             { title: "Z7 Primary", description: "zabbix 7.4", icon: "https://upload.wikimedia.org/wikipedia/commons/b/bf/Zabbix_logo.png", url: "https://z7.nudnov.net/" },
             { title: "S5 Office", description: "zabbix 7.4", icon: "https://upload.wikimedia.org/wikipedia/commons/b/bf/Zabbix_logo.png", url: "https://s5-office.nudnov.net/" },
+            { title: "zabbix6.local", description: "monitor", icon: "https://upload.wikimedia.org/wikipedia/commons/b/bf/Zabbix_logo.png", url: "https://zabbix6.nudnov.net/zabbix/" }
             { title: "S4 VPS", description: "monitor", icon: "https://upload.wikimedia.org/wikipedia/commons/b/bf/Zabbix_logo.png", url: "https://s4.lvdns.com" }
+            
         ]
     },
     {
@@ -145,6 +147,7 @@ const CONFIG_SERVICES = [
         ]
     }
 ];
+
 
 
 
