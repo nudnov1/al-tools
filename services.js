@@ -107,7 +107,7 @@ const CONFIG_SERVICES = [
             { title: "Kuma Shaham BE8", description: "Uptime", icon: "activity", url: "http://uptime-kuma.lvdns.com:3001/" },
             { title: "Kuma Shaham 84", description: "Uptime", icon: "activity", url: "http://kuma84.lvdns.com:3001/dashboard" },
             { title: "Kuma Oracle", description: "Uptime", icon: "activity", url: "http://uptime-kuma-oracle.lvdns.com:3001/dashboard" },
-            { title: "Kuma Amsterdam-vultr", description: "Uptime", icon: "activity", url: "78.141.218.37:3001/dashboard" },
+            { title: "Kuma Amsterdam-vultr", description: "Uptime", icon: "activity", url: "http:/78.141.218.37:3001/dashboard" },
             { title: "Z7 Primary", description: "zabbix 7.4", icon: "https://upload.wikimedia.org/wikipedia/commons/b/bf/Zabbix_logo.png", url: "https://z7.nudnov.net/" },
             { title: "S5 Office", description: "zabbix 7.4", icon: "https://upload.wikimedia.org/wikipedia/commons/b/bf/Zabbix_logo.png", url: "https://s5-office.nudnov.net/" },
             { title: "zabbix6.local", description: "zabbox 6 office", icon: "https://upload.wikimedia.org/wikipedia/commons/b/bf/Zabbix_logo.png", url: "https://zabbix6.nudnov.net/zabbix/" },
@@ -147,6 +147,7 @@ const CONFIG_SERVICES = [
         ]
     }
 ];
+
 
 
 
